@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    tools:context=".DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_gravity="center"
+                android:id="@+id/detay_activity_imageViewKitapResim"
+                android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Kitap Adı:      "
+                    android:textStyle="bold"
+                    android:textColor="@color/detayActivityTextColor"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/detayActivityTextColor"
+                    android:textSize="15sp"
+                    android:id="@+id/detay_activity_textViewKitapAdi"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Kitap Yazarı: "
+                    android:textStyle="bold"
+                    android:textColor="@color/detayActivityTextColor"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/detayActivityTextColor"
+                    android:textSize="15sp"
+                    android:id="@+id/detay_activity_textViewKitapYazari"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Kitap Özeti:   "
+                    android:textStyle="bold"
+                    android:textColor="@color/detayActivityTextColor"
+                    android:textSize="16sp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/detayActivityTextColor"
+                    android:textSize="15sp"
+                    android:id="@+id/detay_activity_textViewKitapOzeti"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="#FD0000"
+                android:text="Sil" />
+
+            <Button
+                android:id="@+id/btnGuncelle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF9800"
+                android:text="Güncelle" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
